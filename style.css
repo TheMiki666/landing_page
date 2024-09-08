@@ -7,18 +7,21 @@ body{
     justify-content: flex-start;
     align-items: stretch;
     width: 1200px;
+    flex: 1 1 auto;
 }
 
 header, footer, main{
     background-color: #1F2937;
+    flex: 1 1 auto;
 }
 
 header{
-    padding: 16px 100px;
+    padding: 16px 150px 64px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    flex: 1 1 auto;
 }
 
 ul.headerLinks{
@@ -37,19 +40,20 @@ ul.headerLinks a{
 }
 
 main{
-    padding: 0 100px 64px;
+    padding: 0 150px 64px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: stretch;
+    gap: 32px;
+    flex: 1 1 auto;
 }
 
 img{
     background-color: #E5E7EB;
-    flex-basis: 600px;
-    flex-shrink: 1;
-    flex-grow: 0;
+    flex: 1 0 auto;
     text-align: center;
+    min-width: 400px;
     /*display: flex;
     justify-content: center;
     align-items: stretch;*/
@@ -59,6 +63,7 @@ h1{
     color: #F9FAF8;
     font-size: 48px;
     font-weight: 900;
+    flex: 1 1 auto;
 }
 
 .relArticles{
@@ -66,6 +71,7 @@ h1{
     flex-direction: column;
     justify-content: flex-start;
     align-items: stretch;
+    flex: 1 1 auto;
 
 }
 
@@ -74,6 +80,7 @@ h2{
     font-size: 36px;
     font-weight: 900;
     text-align: center;
+    flex: 1 1 auto;
 }
 
 .articlesBlock{
@@ -81,6 +88,8 @@ h2{
     flex-direction: row;
     justify-content: space-around;
     align-items: stretch;
+    flex-wrap: wrap;
+    flex: 1 1 auto;
 }
 
 article{
@@ -89,6 +98,8 @@ article{
     justify-content: space-between;
     align-items: stretch;
     width: 200px;
+    flex-shrink: 0;
+    
 }
 
 .articlePlaceholder{
@@ -121,11 +132,12 @@ blockquote{
     font-size: 36px;
     font-weight: light;
     font-style: italic;
-    padding: 100px;
+    padding: 200px;
     display: flex;
     flex-direction: column;
     justify-items: flex-start;
     align-items: stretch;
+    flex: 1 1 auto;
 
 }
 
@@ -157,9 +169,11 @@ button{
 .action{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     gap: 100px;
+    padding: 0 32px;
+    flex: 1 1 auto;
 }
 
 .action button{
@@ -171,10 +185,11 @@ button{
 aside.action{
     background-color: #3882F6; 
     align-self: center;
-    margin: 64px 0;
-    padding: 16px 32px;
+    margin: 64px 0px;
+    padding: 16px 64px;
     border-radius: 8px;
     color:#F9FAF8;
+    box-sizing: border-box;
 
 }
 
@@ -182,6 +197,7 @@ footer{
     text-align: center;
     color: #E5E7EB;
     padding: 32px 0;
+    flex: 1 1 auto;
 }
 
 
